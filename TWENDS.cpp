@@ -27,7 +27,7 @@ int Ends(int a[], int st, int end)
 	else
 		l = a[st] + Ends(a, st + 1, end - 1);
 
-	                                                    // this if else is : If our P1(the one follows optimal ) chooses 'st'  . Then, his choice affects the second Player options/
+	                                                    // this if else is : If our P1(the one follows optimal ) chooses 'end'  . Then, his choice affects the second Player options/
   if (a[st] >= a[end - 1])                               // choices                       
 		r = a[end] + Ends(a, st + 1, end - 1);                  
 	else
