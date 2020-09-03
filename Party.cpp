@@ -24,7 +24,7 @@ void solve()
 
 
 
-		int max_fun = 0, tot_fes;
+		int max_fun = 0, tot_fes = 0;
 
 		for (int i = 1; i <= n; i++)
 			for (int j = 1; j <= budget; j++)
@@ -33,6 +33,8 @@ void solve()
 					max_fun = dp[i][j];
 					tot_fes = j;
 				}
+				else if (dp[i][j] == max_fun )
+					tot_fes = min(tot_fes, j);
 
 
 
