@@ -14,6 +14,8 @@ int cal(int h, int a, int place)
 		ans = 1 + cal(h + 3, a + 2, 1) ;
 	if (place == 3)
 		ans = 1 + cal(h + 3, a + 2, 1) ;
+	
+	return ans;
 }
 
 
